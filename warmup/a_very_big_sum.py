@@ -1,6 +1,7 @@
 '''
-program to print a list of items in an array added by the integer given as list length
-then count given as power
+You are given an array of integers of size . You need to print the sum of the
+elements in the array, keeping in mind that some of those integers may be quite
+large.
 '''
 import math
 

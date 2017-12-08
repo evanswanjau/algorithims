@@ -6,9 +6,7 @@ def reduce_string(string):
 
     for i in string:
         count = string.count(i)
-
-        if count == 2:
-            string = string.replace(i, '')
+        string = string.replace(i, '')
 
         print(string)
 
