@@ -5,15 +5,36 @@ the last line must not have a space
 
 size = int(input("Please enter staircase length: "))
 
-def adding_part(integer):
+def adding_part(n):
+
     count = 0
+
     baseLength = []
 
-    while count < integer:
+    default_string = ''
+
+    while count < n:
+
+        i = 0
+
+        value = (n - 1) - count
+
+        default = ('{:^'+str(value)+'}').format(default_string)
+
+        string = '#'
+
+        while i < count:
+
+            string += '#'
+
+            i += 1
+
+
+        print(default + string)
+
         count += 1
-        baseLength.append('#')
-        newLength = ''.join(baseLength)
-        print(newLength)
+
+
 
 
 adding_part(size)
