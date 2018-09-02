@@ -9,6 +9,7 @@ def min_max_sum(string):
 
     string = string.split(' ') # Take out the space and set into a list
     string = [int(i) for i in string] # convert the string to integers
+
     string_length = (len(string)) # string length for loop
     sum_array = [] # array to store total values
 
@@ -23,7 +24,7 @@ def min_max_sum(string):
     max_value = max(sum_array)
     min_value = min(sum_array)
 
-    print('max_value: ', max_value, '\nmin_value: ', min_value)
+    print(min_value, max_value)
 
 
 

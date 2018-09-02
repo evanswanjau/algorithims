@@ -4,6 +4,20 @@ A program to convert timefrom 12hr clock system to 24 millitary system
 
 time = input('Enter time in the format(h:m:sAM/PM)')
 
+def concatenateValue(int):
+
+    int = str(int);
+
+    if len(int) == 1:
+
+        int = '0' + int
+
+
+    return int
+
+
+
+
 def time_conversion(time):
 
     value = time[-2]
@@ -17,8 +31,23 @@ def time_conversion(time):
     s = time[2]
 
     if value == 'P':
-        print(h)
+
+        h += 12
+
+        h = str(h)
+        m = concatenateValue(m)
+        s = concatenateValue(s)
+
+        print(h + ":" + m + ":" + s)
+
     else:
-        print("0",h,":", m, ":", s, 'hrs')
+
+        h = concatenateValue(h)
+        m = concatenateValue(m)
+        s = concatenateValue(s)
+
+        print(h + ":" + m + ":" + s)
+
+
 
 time_conversion(time)
