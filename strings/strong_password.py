@@ -1,4 +1,5 @@
-password = '4500'
+password = '790'
+n = len(password)
 
 num_count = 1
 low_count = 1
@@ -40,18 +41,18 @@ for i in password:
 
 pass_count = num_count + low_count + upp_count + sp_count
 
-if len(password) < 6:
+if n < 6:
 
-    len_count = 6 - len(password)
+    len_count = 6 - n
 
+    if len_count > pass_count:
 
-if len_count > pass_count:
+        print(len_count)
 
-    count = len_count
+    else:
+
+        print(pass_count)
 
 else:
 
-    count = pass_count
-
-
-print(count)
+    print(pass_count)
